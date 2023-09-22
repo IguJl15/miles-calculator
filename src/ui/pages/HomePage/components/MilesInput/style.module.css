@@ -1,0 +1,106 @@
+.miles_input_row {
+  /* Layout */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+
+  height: 2rem;
+
+  /* Style */
+  border-radius: 50px;
+  border: 1px solid #e0e0e0;
+  background: rgba(255, 255, 255, 0.66);
+
+  overflow: hidden;
+
+  & button:first-child {
+    border-radius: 50px 0 0 50px;
+    border-right: 1px solid #ccc;
+  }
+
+  & button:nth-child(3) {
+    border-radius: 0 50px 50px 0;
+    border-left: 1px solid #ccc;
+  }
+
+  & input {
+    width: 75px;
+    text-align: center;
+
+    padding: 8px 45px;
+
+    align-self: stretch;
+
+    /* Typography */
+    color: #147bd1;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    border: none;
+
+    @media (prefers-color-scheme: dark) {
+      color: #2fbbf3;
+    }
+  }
+
+  & button {
+    width: 50px;
+
+    display: flex;
+    padding: 8px 0px;
+
+    align-items: center;
+    justify-content: center;
+    flex: 1 0 0;
+    align-self: stretch;
+    gap: 2px;
+
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    border: none;
+  }
+
+  & button:hover {
+    background-color: #ddd;
+
+    @media (prefers-color-scheme: dark) {
+      background-color: #333;
+    }
+  }
+
+  & button:active {
+    background-color: #eee;
+
+    @media (prefers-color-scheme: dark) {
+      background-color: #555;
+    }
+  }
+}
+
+.miles_form_area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  align-self: stretch;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

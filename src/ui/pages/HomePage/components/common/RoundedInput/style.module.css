@@ -1,0 +1,22 @@
+.input {
+  min-width: 5em;
+  max-width: 5em;
+
+  padding: 4px 8px;
+
+  border-radius: 50px;
+  border: 1px solid #e0e0e0;
+  background: rgba(255, 255, 255, 0.66);
+
+  /* Text */
+  color: #147bd1;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 700;
+
+  @media (prefers-color-scheme: dark) {
+    background: rgba(70, 70, 70, 0.66);
+
+    color: #2fbbf3;
+  }
+}
